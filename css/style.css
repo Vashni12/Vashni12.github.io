@@ -1,0 +1,118 @@
+@font-face{
+    font-family:title;
+    src:url("/fonts/amsterdam four.ttf");
+}
+
+@font-face {
+    font-family: quick-sand;
+    src:url("/fonts/quicksand_dash.otf")
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url("/img/back2.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: quick-sand;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar{
+    display:none;
+}
+
+.regform{
+    margin-top:100px;
+    color:#fff;
+    text-transform:capitalize;
+    transition: all 4s ease-in-out;
+    font-family:title;
+}
+
+
+.regform h1{
+    font-size:65px;
+}
+
+.regform h4{
+    font-size: 17px;
+    font-family:quick-sand;
+}
+
+
+.main{
+    margin:60px;
+    transition:all 5s ease-in-out;
+}
+
+.in-field{
+    background:transparent;
+    border:none;
+    outline:none;
+    border-bottom:1px solid gray;
+    width: 200px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color:#fff;
+
+}
+
+.in-field:hover{
+    border-bottom: 2px solid black;
+    cursor:default;
+}
+
+.name{
+    font-family:title;
+    font-weight:700;
+    font-size:30px;
+    color:ghostwhite;
+}
+
+#city{
+    width:330px;
+}
+
+#state{
+    width:70px;
+}
+
+#email{
+    width:400px;
+}
+
+#college{
+    width:400px;
+}
+
+#area-code {
+    width: 70px;
+}
+
+
+.button{
+    font-family: quick-sand;
+    font-style:italic;
+    background: #ff5722;
+    border-color: transparent;
+    font-weight: 800;
+    font-size: 32px;
+    margin-top: 32px;
+    shape-rendering:optimizeQuality;
+    border-radius:16px 30px 16px 30px;
+}
+
+.button:hover{
+    background-color: forestgreen;
+    cursor:pointer;
+}
+
+.radio{
+    font-family:quick-sand;
+    font-size:larger;
+    color:mintcream;
+    margin-bottom:30px;
+}
