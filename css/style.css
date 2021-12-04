@@ -65,30 +65,36 @@ body {
     cursor:default;
 }
 
-.name{
-    font-family:title;
-    font-weight:700;
-    font-size:30px;
-    color:ghostwhite;
+.name {
+    font-family: title;
+    font-weight: 700;
+    font-size: 35px;
+    color: #ff5722;
+    letter-spacing:2px;
+    font-stretch:expanded;
 }
 
-#city{
-    width:330px;
+[id='entry.1052862641'] {
+    width: 330px;
 }
 
-#state{
+[id='entry.348688332'] {
+    width: 70px;
+}
+
+[id='entry.1397730140']{
     width:70px;
 }
 
-#email{
-    width:400px;
+[id='entry.2006775650'] {
+    width: 400px;
 }
 
-#college{
-    width:400px;
+[id='entry.228912528'] {
+    width: 400px;
 }
 
-#area-code {
+[id ='entry.1985500591'] { 
     width: 70px;
 }
 
@@ -115,4 +121,13 @@ body {
     font-size:larger;
     color:mintcream;
     margin-bottom:30px;
+}
+
+.radio:hover{
+    color:aqua;
+    cursor:pointer;
+}
+
+.location {
+    margin-bottom:60px;
 }

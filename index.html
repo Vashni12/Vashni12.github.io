@@ -5,54 +5,67 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Youth Evangelical Fellowship Christmas Retreat</title>
+    <link rel="icon" type="image/svg" href="favicon/favicon.ico" />
 </head>
 
 <body>
-    
+
     <div class="regform">
         <h1> YEF Christmas Retreat</h1><br />
         <h4>WE  HOPE    YOU CAN JOIN    US  MEDITATE    ON  THE BIRTH   OF  CHRIST</h4>
     </div>
 
-    <div class="main" >
-        <form id="register-form" method="post" action="">
-            
+    <div class="main">
+        <form id="register-form" action="https://docs.google.com/forms/d/e/1FAIpQLSeqE3OToKtsVNh3S1NImYrmCsAsrkfLv_CGYzLuUCn97sVZKA/formResponse?" target="hidden_iframe" onsubmit="submitted = true;">
+
             <div>
                 <h2 class="name">Name:</h2>
-                <input class="in-field" type="text" name="firstname" placeholder="Firstname" required/>
-              
-                <input class="in-field" type="text" name="lastname" placeholder="Surname" required/>
+                <input id="entry.198809008" class="in-field" type="text" name="firstname" placeholder="Firstname" required />
+
+                <input id="entry.1406698973" class="in-field" type="text" name="lastname" placeholder="Surname" required />
+
+                <br>
+                <input id="entry.1397730140" class="in-field" type="text" name="age" placeholder="Age" required />
+
             </div>
 
-            <input id="city" class="in-field" type="text" name="city" placeholder="City" />
+            <input id="entry.1052862641" class="in-field" type="text" name="city" placeholder="City" />
 
-            <input id="state" class="in-field" type="text" name="state" placeholder="State" />
-
-            <br />
-            <h2 class="name"><em>Where will you be attending from?</em></h2>
-            <input type="radio" name="onsite"value="Onsite"/>
-            <label class="radio">Onsite</label><br />
-
-            <input type="radio" name="online" value="Online"/>
-            <label class="radio">Online</label>
+            <input id="entry.348688332" class="in-field" type="text" name="state" placeholder="State" />
 
             <br />
-            <input id="email" class="in-field" type="email" name="email" placeholder="Your Email" />
+            <div class="location">
+                <h2 class="name"><em>Where will you be attending from?</em></h2>
+                <input type="radio" name="entry.294727777" value="Onsite" />
+                <label class="radio">Onsite</label><br />
+
+                <input type="radio" name="entry.294727777" value="Online" />
+                <label class="radio">Online</label>
+            </div>
+            <br />
+            <input id="entry.2006775650" class="in-field" type="email" name="email" placeholder="Your Email" required />
 
             <br />
-            <input id="college" class="in-field" type="text" name="college" placeholder="Your College" />
+            <input id="entry.228912528" class="in-field" type="text" name="college" placeholder="Your College" />
 
             <br />
             <h2 class="name">Phone:</h2>
-            
-            <input id="area-code"class="in-field" type="text" name="area_code" placeholder="001"/>
-            
-            <input class="in-field" type="text" name="phone_number" placeholder="Phone Number" />
-            
+
+            <input id="entry.1985500591" class="in-field" type="text" name="area_code" placeholder="001" />
+
+            <input id="entry.1135902100" class="in-field" type="text" name="phone_number" placeholder="Phone Number" />
+
             <br />
             <button class="button" type="submit">Register</button>
         </form>
     </div>
 
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+    <script type="text/javascript">
+        // Reload page 5 seconds after form submission
+        $("form").onsubmit = setTimeout(function () {
+            location.reload(true); //MODIFICATION
+        }, 5000);
+    </script>
 </body>
 </html>
