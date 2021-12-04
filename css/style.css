@@ -1,11 +1,11 @@
 @font-face{
     font-family:title;
-    src:url("./fonts/amsterdam four.ttf");
+    src:url("../fonts/amsterdam four.ttf");
 }
 
 @font-face {
     font-family: quick-sand;
-    src:url("./fonts/quicksand_dash.otf")
+    src:url("../fonts/quicksand_dash.otf")
 }
 
 
@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url("/img/back2.jpg");
+    background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url("../img/back2.jpg");
     background-size: cover;
     background-position: center;
     font-family: quick-sand;
