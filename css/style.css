@@ -1,11 +1,11 @@
 @font-face{
-    font-family:title;
-    src:url("../fonts/amsterdam four.ttf") format('truetype'),url("../fonts/amsterdam four.eof"),url("../fonts/amsterdam four.svg"),url("../fonts/amsterdam four.woff2") format('woff2');
+    font-family:'title';
+    src:url('amsterdamfour.woff') format('woff');
 }
 
 @font-face {
-    font-family: quick-sand;
-    src:url("../fonts/quicksand_dash.otf")
+    font-family: 'quick-sand';
+    src:url('quicksanddash.woff') format('woff');
 }
 
 
