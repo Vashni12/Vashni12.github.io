@@ -1,6 +1,6 @@
 @font-face{
     font-family:title;
-    src:url("../fonts/amsterdam four.ttf"),url("../fonts/amsterdam four.eof"),url("../fonts/amsterdam four.svg"),url("../fonts/amsterdam four.woff2");
+    src:url("../fonts/amsterdam four.ttf") format('truetype'),url("../fonts/amsterdam four.eof"),url("../fonts/amsterdam four.svg"),url("../fonts/amsterdam four.woff2") format('woff2');
 }
 
 @font-face {
