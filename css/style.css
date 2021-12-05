@@ -24,23 +24,20 @@ body {
     display:none;
 }
 
-.regform{
+.title{
     margin-top:100px;
     color:#fff;
-    text-transform:capitalize;
     transition: all 4s ease-in-out;
+}
+
+
+.title h1{
     font-family:'amsterdamfour';
-}
-
-.title {
-    font-family: 'amsterdamfour';
-}
-
-.regform h1{
+    text-transform:capitalize;
     font-size:65px;
 }
 
-.regform h4{
+.title h4{
     font-size: 17px;
     font-family:'quicksanddash';
 }
