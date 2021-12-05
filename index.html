@@ -17,7 +17,7 @@
     </div>
 
     <div class="main">
-        <form id="register-form" action="https://docs.google.com/forms/d/e/1FAIpQLSeqE3OToKtsVNh3S1NImYrmCsAsrkfLv_CGYzLuUCn97sVZKA/formResponse?" target="hidden_iframe" onsubmit="submitted = true;">
+        <form id="register-form" >
 
             <div>
                 <h2 class="name">Name:</h2>
@@ -57,7 +57,7 @@
             <input id="entry.1135902100" class="in-field" type="text" name="phone_number" placeholder="Phone Number" />
 
             <br />
-            <button class="button" type="submit">Register</button>
+            <button class="button" type="submit" formaction="https://docs.google.com/forms/d/e/1FAIpQLSeqE3OToKtsVNh3S1NImYrmCsAsrkfLv_CGYzLuUCn97sVZKA/formResponse?" formtarget="hidden_iframe" onsubmit="submitted = true;">Register</button>
         </form>
     </div>
 
@@ -65,9 +65,9 @@
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript">var submitted = false;</script>
     <script type="text/javascript">
-        $('#register-form').on('submit', function (e) {
+        $('#button').on('submit', function (e) {
             $('#register-form *').fadeOut(2000);
-            $('#register-form').prepend('Your submission has been processed...');
+            $('#register-form').prepend('You have successfully Registered. We can\'t wait to fellowship with you...');
         });
     </script>
 
