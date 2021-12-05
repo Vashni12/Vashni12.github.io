@@ -17,7 +17,7 @@
     </div>
 
     <div class="main">
-        <form id="register-form" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeqE3OToKtsVNh3S1NImYrmCsAsrkfLv_CGYzLuUCn97sVZKA/Response?" target="hidden_iframe" onsubmit="submitted=true;">
+        <form id="register-form" name="register-form" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeqE3OToKtsVNh3S1NImYrmCsAsrkfLv_CGYzLuUCn97sVZKA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
 
             <div>
                 <h2 class="name">Name:</h2>
@@ -57,7 +57,7 @@
             <input id="entry.1135902100" class="in-field" type="text" name="phone_number" placeholder="Phone Number" />
 
             <br />
-            <input id="button" type="submit" placeholder="Register" value="Submit" />
+            <input id="button" type="submit" value="Register" />
         </form>
     </div>
 
@@ -66,7 +66,7 @@
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript">var submitted = false;</script>
     <script type="text/javascript">
-        $('#register-form').on('submit', function (e) {
+        $('#register-form').on('Register', function (e) {
             $('#register-form *').fadeOut(2000);
             $('#register-form').prepend('Thank You for Registering. We hope we can fellowship...');
         });

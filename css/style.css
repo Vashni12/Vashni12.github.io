@@ -102,17 +102,17 @@ body {
 [id = 'button']{
     font-family: 'quicksanddash';
     font-style:italic;
-    background: #ff5722;
+    background: linear-gradient(#ff5722,#ffd800);
     border-color: transparent;
-    font-weight: 800;
+    font-weight: bolder;
     font-size: 32px;
     margin-top: 32px;
-    shape-rendering:optimizeQuality;
-    border-radius:16px 30px 16px 30px;
+    shape-rendering:geometricPrecision;
+    border-radius:6px 30px 6px 30px;
 }
 
 [id = 'button']:hover{
-    background-color: forestgreen;
+    background: linear-gradient(forestgreen,blue);
     cursor:pointer;
 }
 
