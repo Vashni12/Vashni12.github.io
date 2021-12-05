@@ -99,7 +99,7 @@ body {
 }
 
 
-.button{
+[id = 'button']{
     font-family: 'quicksanddash';
     font-style:italic;
     background: #ff5722;
@@ -111,7 +111,7 @@ body {
     border-radius:16px 30px 16px 30px;
 }
 
-.button:hover{
+[id = 'button']:hover{
     background-color: forestgreen;
     cursor:pointer;
 }

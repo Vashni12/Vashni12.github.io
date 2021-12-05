@@ -17,7 +17,7 @@
     </div>
 
     <div class="main">
-        <form id="register-form" >
+        <form id="register-form">
 
             <div>
                 <h2 class="name">Name:</h2>
@@ -57,18 +57,19 @@
             <input id="entry.1135902100" class="in-field" type="text" name="phone_number" placeholder="Phone Number" />
 
             <br />
-            <button class="button" type="submit" formaction="https://docs.google.com/forms/d/e/1FAIpQLSeqE3OToKtsVNh3S1NImYrmCsAsrkfLv_CGYzLuUCn97sVZKA/formResponse?" formtarget="hidden_iframe" onsubmit="submitted = true;" onclick="post_it()">Register</button>
+            <input id="button" type="submit" placeholder="Register" value="Submit" />
         </form>
     </div>
 
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-  
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript">var submitted = false;</script>
     <script type="text/javascript">
-        var submitted = false;
-        function post_it(e) {
+        $('#register-form').on('submit', function (e) {
             $('#register-form *').fadeOut(2000);
-            $('#register-form').prepend('You have successfully Registered. We can\'t wait to fellowship with you...');
-        }
+            $('#register-form').prepend('Thank You for Registering. We hope we can fellowship...');
+        });
     </script>
 
 </body>
