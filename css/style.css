@@ -1,3 +1,13 @@
+@font-face{
+    font-family: 'amsterdamfour';
+    src:url('../fonts/amsterdamfour.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'quicksanddash';
+    src:url('../fonts/quicksanddash.woff') format('woff');
+}
+
 
 body {
     margin: 0;

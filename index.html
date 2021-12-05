@@ -4,17 +4,14 @@
 <head>
     <meta charset="utf-8" />
 
-    <link href="fonts/amsterdamfour.woff" rel="stylesheet"/>
-    <link href="fonts/quicksanddash.woff" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
-
     <title>Youth Evangelical Fellowship Christmas Retreat</title>
     <link rel="icon" type="image/svg" href="favicon/favicon.ico" />
 </head>
 
 <body>
 
-    <div class="regform">
+    <div class="reregister-form">
         <h1> YEF Christmas Retreat</h1><br />
         <h4>WE  HOPE    YOU CAN JOIN    US  MEDITATE    ON  THE BIRTH   OF  CHRIST</h4>
     </div>
@@ -65,11 +62,14 @@
     </div>
 
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript">var submitted = false;</script>
     <script type="text/javascript">
-        // Reload page 5 seconds after form submission
-        $("form").onsubmit = setTimeout(function () {
-            location.reload(true); //MODIFICATION
-        }, 5000);
+        $('#register-form').on('submit', function (e) {
+            $('#register-form *').fadeOut(2000);
+            $('#register-form').prepend('Your submission has been processed...');
+        });
     </script>
+
 </body>
 </html>
