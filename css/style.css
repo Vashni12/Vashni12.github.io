@@ -1,13 +1,3 @@
-@font-face{
-    font-family:'title';
-    src:url('amsterdamfour.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'quick-sand';
-    src:url('quicksanddash.woff') format('woff');
-}
-
 
 body {
     margin: 0;
@@ -16,7 +6,7 @@ body {
     background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url("../img/back2.jpg");
     background-size: cover;
     background-position: center;
-    font-family: quick-sand;
+    font-family: 'quicksanddash';
     -ms-overflow-style: none;
 }
 
@@ -29,7 +19,7 @@ body {
     color:#fff;
     text-transform:capitalize;
     transition: all 4s ease-in-out;
-    font-family:title;
+    font-family:'amsterdamfour';
 }
 
 
@@ -39,7 +29,7 @@ body {
 
 .regform h4{
     font-size: 17px;
-    font-family:quick-sand;
+    font-family:'quicksanddash';
 }
 
 
@@ -66,7 +56,7 @@ body {
 }
 
 .name {
-    font-family: title;
+    font-family: 'amsterdamfour';
     font-weight: 700;
     font-size: 35px;
     color: #ff5722;
@@ -100,7 +90,7 @@ body {
 
 
 .button{
-    font-family: quick-sand;
+    font-family: 'quicksanddash';
     font-style:italic;
     background: #ff5722;
     border-color: transparent;
