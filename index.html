@@ -17,7 +17,7 @@
     </div>
 
     <div class="main">
-        <form id="register-form" name="register-form" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeqE3OToKtsVNh3S1NImYrmCsAsrkfLv_CGYzLuUCn97sVZKA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+        <form id="register-form" name="register-form">
 
             <div>
                 <h2 class="name">Name:</h2>
@@ -64,10 +64,8 @@
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
     <script src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript">var submitted = false;</script>
     <script type="text/javascript">
-        $('#register-form').on('Register', );
-
+        var submitted = false;
 
         var $form = $('form#test-form'),
             url = 'https://script.google.com/macros/s/AKfycbwtA9T5y_RNxlRyvlY9EkS6iWjFRbEs-b5gn1hgtq0L-5OZhVn3cHL59vqujOU8D3e-/exec'
