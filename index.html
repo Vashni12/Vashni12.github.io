@@ -61,28 +61,31 @@
         </form>
     </div>
 
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-
-    <script type="text/javascript">
+    <!--
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+    -->
+    <script>
         //var submitted = false;
 
-        var $form = $('form#test-form'),
-            url = 'https://script.google.com/macros/s/AKfycbwtA9T5y_RNxlRyvlY9EkS6iWjFRbEs-b5gn1hgtq0L-5OZhVn3cHL59vqujOU8D3e-/exec'
+        // do something
+        //function (e) {
+        //    $('#register-form *').fadeOut(2000);
+        //    $('#register-form').prepend('Thank You for Registering. We hope we can fellowship...');
+        //}
 
-        $('#button').on('click', function (e) {
-            e.preventDefault();
-            var jqxhr = $.ajax({
-                url: url,
-                method: "GET",
-                dataType: "json",
-                data: $form.serializeObject()
-            }).success(
-                // do something
-                //function (e) {
-                //    $('#register-form *').fadeOut(2000);
-                //    $('#register-form').prepend('Thank You for Registering. We hope we can fellowship...');
-                //}
-            );
+
+        
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbznERJ_zcJnm1ZjrDBC2P9gcW8hjseHD7O6hjbTXRbc7KvWk99ujvJ54nzqnRz15kME/exec';
+        const form = document.forms['register-form'];
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
         })
     </script>
 
