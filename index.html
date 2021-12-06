@@ -21,40 +21,40 @@
 
             <div>
                 <h2 class="name">Name:</h2>
-                <input id="entry.198809008" class="in-field" type="text" name="firstname" placeholder="Firstname" required />
+                <input id="First name" class="in-field" type="text" name="firstname" placeholder="Firstname" required />
 
-                <input id="entry.1406698973" class="in-field" type="text" name="lastname" placeholder="Surname" required />
+                <input id="Surname" class="in-field" type="text" name="lastname" placeholder="Surname" required />
 
                 <br>
-                <input id="entry.1397730140" class="in-field" type="text" name="age" placeholder="Age" required />
+                <input id="Age" class="in-field" type="text" name="age" placeholder="Age" required />
 
             </div>
 
-            <input id="entry.1052862641" class="in-field" type="text" name="city" placeholder="City" />
+            <input id="City" class="in-field" type="text" name="city" placeholder="City" />
 
-            <input id="entry.348688332" class="in-field" type="text" name="state" placeholder="State" />
+            <input id="State" class="in-field" type="text" name="state" placeholder="State" />
 
             <br />
             <div class="location">
                 <h2 class="name"><em>Where will you be attending from?</em></h2>
-                <input type="radio" name="entry.294727777" value="Onsite" />
+                <input type="radio" name="Where will you be attending from?" value="Onsite" />
                 <label class="radio">Onsite</label><br />
 
-                <input type="radio" name="entry.294727777" value="Online" />
+                <input type="radio" name="Where will you be attending from?" value="Online" />
                 <label class="radio">Online</label>
             </div>
             <br />
-            <input id="entry.2006775650" class="in-field" type="email" name="email" placeholder="Your Email" required />
+            <input id="Email" class="in-field" type="email" name="email" placeholder="Your Email" required />
 
             <br />
-            <input id="entry.228912528" class="in-field" type="text" name="college" placeholder="Your College" />
+            <input id="College" class="in-field" type="text" name="college" placeholder="Your College" />
 
             <br />
             <h2 class="name">Phone:</h2>
 
-            <input id="entry.1985500591" class="in-field" type="text" name="area_code" placeholder="001" />
+            <input id="Area Code" class="in-field" type="text" name="area_code" placeholder="001" />
 
-            <input id="entry.1135902100" class="in-field" type="text" name="phone_number" placeholder="Phone Number" />
+            <input id="Phone number" class="in-field" type="text" name="phone_number" placeholder="Phone Number" />
 
             <br />
             <input id="button" type="submit" value="Register" />
@@ -66,10 +66,27 @@
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript">var submitted = false;</script>
     <script type="text/javascript">
-        $('#register-form').on('Register', function (e) {
-            $('#register-form *').fadeOut(2000);
-            $('#register-form').prepend('Thank You for Registering. We hope we can fellowship...');
-        });
+        $('#register-form').on('Register', );
+
+
+        var $form = $('form#test-form'),
+            url = 'https://script.google.com/macros/s/AKfycbwtA9T5y_RNxlRyvlY9EkS6iWjFRbEs-b5gn1hgtq0L-5OZhVn3cHL59vqujOU8D3e-/exec'
+
+        $('#register-form').on('click', function (e) {
+            e.preventDefault();
+            var jqxhr = $.ajax({
+                url: url,
+                method: "GET",
+                dataType: "json",
+                data: $form.serializeObject()
+            }).success(
+                // do something
+                function (e) {
+                    $('#register-form *').fadeOut(2000);
+                    $('#register-form').prepend('Thank You for Registering. We hope we can fellowship...');
+                }
+            );
+        })
     </script>
 
 </body>

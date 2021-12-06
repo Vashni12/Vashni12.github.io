@@ -74,27 +74,27 @@ body {
     font-stretch:expanded;
 }
 
-[id='entry.1052862641'] {
+#City {
     width: 330px;
 }
 
-[id='entry.348688332'] {
+#State {
     width: 70px;
 }
 
-[id='entry.1397730140']{
+#Age{
     width:70px;
 }
 
-[id='entry.2006775650'] {
+#Email {
     width: 400px;
 }
 
-[id='entry.228912528'] {
+#College {
     width: 400px;
 }
 
-[id ='entry.1985500591'] { 
+[id='Area Code'] { 
     width: 70px;
 }
 
