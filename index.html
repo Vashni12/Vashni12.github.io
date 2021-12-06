@@ -63,9 +63,8 @@
 
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
-    <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript">
-        var submitted = false;
+        //var submitted = false;
 
         var $form = $('form#test-form'),
             url = 'https://script.google.com/macros/s/AKfycbwtA9T5y_RNxlRyvlY9EkS6iWjFRbEs-b5gn1hgtq0L-5OZhVn3cHL59vqujOU8D3e-/exec'
@@ -79,10 +78,10 @@
                 data: $form.serializeObject()
             }).success(
                 // do something
-                function (e) {
-                    $('#register-form *').fadeOut(2000);
-                    $('#register-form').prepend('Thank You for Registering. We hope we can fellowship...');
-                }
+                //function (e) {
+                //    $('#register-form *').fadeOut(2000);
+                //    $('#register-form').prepend('Thank You for Registering. We hope we can fellowship...');
+                //}
             );
         })
     </script>
