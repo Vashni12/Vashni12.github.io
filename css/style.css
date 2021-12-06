@@ -75,15 +75,15 @@ body {
 }
 
 #City {
-    width: 330px;
+    width: 320px;
 }
 
 #State {
-    width: 70px;
+    width: 80px;
 }
 
 #Age{
-    width:70px;
+    width:80px;
 }
 
 #Email {
