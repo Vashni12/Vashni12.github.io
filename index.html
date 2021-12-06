@@ -12,23 +12,43 @@
 <body>
 
     <div class="title">
-        <h1> YEF Christmas Retreat</h1><br />
-        <h4>WE  HOPE    YOU CAN JOIN    US  MEDITATE    ON  THE BIRTH   OF  CHRIST</h4>
+        <h1> Youth Evangelical Fellowship International Presents</h1><br />
+        <h4>Christmas Retreat and Anniversary Service</h4>
     </div>
+    <div class="intro">
+        <hr class="dotted-line" />
+        <br />
+        <p>
+            Join in this happy time of examination of who Jesus is to us and the<br />
+            significance of his birth
+        </p>
 
+        <p>
+            This three day retreat will be featured both onsite and online. Onsite<br />
+            participants will be expected to join on the evening of the 23rd in Sanford,<br />
+            Fl. More information will be emailed as the event draws nearer.<br />
+        </p>
+
+        <br />
+        <hr class="dotted-line" />
+        <br />
+    </div>
     <div class="main">
         <form id="register-form" name="register-form" action="https://formspree.io/f/xknywdae" method="post">
 
+            <input id="Name" class="in-field" type="text" name="Name" placeholder="Name" required />
+            <br/>
+            <br />
             <div>
-                <h2 class="name">Name:</h2>
-                <input id="First name" class="in-field" type="text" name="firstname" placeholder="Firstname" required />
-
-                <input id="Surname" class="in-field" type="text" name="lastname" placeholder="Surname" required />
-
-                <br>
-                <input id="Age" class="in-field" type="text" name="age" placeholder="Age" required />
-
+            <input id="Phone number" class="in-field" type="tel" name="phone_number" placeholder="Phone Number" />
+            
+            <input id="Email" class="in-field" type="email" name="email" placeholder="Email" required />
             </div>
+            <br />
+
+            <input id="College" class="in-field" type="text" placeholder="Your School" /> 
+            <br />
+            <br />
 
             <input id="City" class="in-field" type="text" name="city" placeholder="City" />
 
@@ -36,30 +56,26 @@
 
             <br />
             <div class="location">
-                <h2 class="name"><em>Where will you be attending from?</em></h2>
-                <input type="radio" name="Where will you be attending from?" value="Onsite" />
-                <label class="radio">Onsite</label><br />
+                <label class="radio">Attending Onsite</label>
+                <input type="radio" name="Where will you be attending from?" value="Attending Onsite" />
 
-                <input type="radio" name="Where will you be attending from?" value="Online" />
-                <label class="radio">Online</label>
+                <label class="radio">Attending Online</label>
+                <input type="radio" name="Where will you be attending from?" value="Attending Online" />
             </div>
-            <br />
-            <input id="Email" class="in-field" type="email" name="email" placeholder="Your Email" required />
-
-            <br />
-            <input id="College" class="in-field" type="text" name="college" placeholder="Your College" />
-
-            <br />
-            <h2 class="name">Phone:</h2>
-
-            <input id="Area Code" class="in-field" type="text" name="area_code" placeholder="001" />
-
-            <input id="Phone number" class="in-field" type="text" name="phone_number" placeholder="Phone Number" />
 
             <br />
             <input id="button" type="submit" value="Register" />
         </form>
     </div>
+
+    <footer class="intro">
+        <p>
+            For to us a child is born, to us a son given, and the government will be on his shoulders.<br />
+            And he will be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace.<br />
+                                                Isaiah 9:6
+
+        </p>
+    </footer>
 
     <!--
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
