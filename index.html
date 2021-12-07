@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <div class="title">
         <h1> Youth Evangelical Fellowship International Presents</h1><br />
         <h4>Christmas Retreat and Anniversary Service</h4>
@@ -33,31 +32,31 @@
         <hr class="dotted-line" />
         <br />
     </div>
-    <div class="main">
-        <form id="register-form" name="register-form" action="https://formspree.io/f/xknywdae" method="post">
+    <div id="form-disp" class="main">
+        <form id="register-form" name="register-form"  action="https://formspree.io/f/xknywdae" method="post">
 
             <input id="Name" class="in-field" type="text" name="Name" placeholder="Name" required />
             <br/>
             <br />
-            <div>
-            <input id="Phone number" class="in-field" type="tel" name="phone_number" placeholder="Phone Number" />
+         
+            <input id="Phone number" class="in-field" type="tel" name="Phone number" placeholder="Phone Number" />
             
-            <input id="Email" class="in-field" type="email" name="email" placeholder="Email" required />
-            </div>
+            <input id="Email" class="in-field" type="email" name="Email" placeholder="Email" required />
+           
             <br />
 
-            <input id="College" class="in-field" type="text" placeholder="Your School" /> 
+            <input id="College" class="in-field" name="College" type="text" placeholder="Your School" /> 
             <br />
             <br />
 
-            <input id="City" class="in-field" type="text" name="city" placeholder="City" />
+            <input id="City" class="in-field" type="text" name="City" placeholder="City" />
 
-            <input id="State" class="in-field" type="text" name="state" placeholder="State" />
+            <input id="State" class="in-field" type="text" name="State" placeholder="State" />
 
             <br />
             <div class="location">
                 <label class="radio">Attending Onsite</label>
-                <input type="radio" name="Where will you be attending from?" value="Attending Onsite" />
+                <input type="radio" name="Where will you be attending from?" value="Attending Onsite" required/>
 
                 <label class="radio">Attending Online</label>
                 <input type="radio" name="Where will you be attending from?" value="Attending Online" />
@@ -66,9 +65,78 @@
             <br />
             <input id="button" type="submit" value="Register" />
         </form>
+
+    </div>
+    <div id="schedule">
+        <div class="intro">
+            <hr class="dotted-line" />
+            <br />
+            <p>
+                Welcome Everyone! We hope that all attendees can <br />
+                experience Jesus and understand the deep importance <br />
+                of the birth of Christ.<br />
+            </p>
+            <h4 class="intro">
+                Theme: Jesus Is ...
+            </h4>
+            <p>
+
+                <br />
+                <br />
+                Isaiah 9:6<br />
+                For to us a child is born, to us a son is given, and the government will<br />
+                be on his shoulders. And he will be called Wonderful Counselor, Mighty <br />
+                God, Everlasting Father, Prince of Peace.<br />
+            </p>
+
+            <br />
+            <hr class="dotted-line" />
+            <br />
+        </div>
+        <div>
+            <pre class="intro">
+            Date: December 24-26th, 2021 (EST)
+            Location: YEF HQ Chapel, 519 South Park Ave. Sanford, FL 32771
+            On-site Attendance Fee: $100 (including accommodations and meals)
+                *The whole event will be broadcasted online.
+        </pre>
+            <h4 class="intro">Program:</h4>
+            <pre class="intro">
+            
+            24th Friday
+            9:00 Opening Service [Jesus is Immanuel]
+            10:00 Orientation
+            10:30 Icebreakers
+            11:30 Prayer
+            12:00 Lunch
+            1:30 Bible Jeopardy!
+            3:00 Bible Study I [Son of God] & Reflection
+            4:45 Bible Study II [Son of Man] & Reflection
+            6:15 Dinner
+            7:30 Prayer Night
+
+
+
+            25th Saturday
+            10:00 Christmas Service
+            12:00 Lunch
+            2:00 Bible Study III [Christ] & Reflection
+            3:30 Disney Springs
+            6:15 Dinner
+            7:30 Christmas Movie Night
+
+
+
+            26th Sunday
+            11:00 12th Anniversary / Closing Service
+            12:30 Lunch
+            2:00 Testimony On the Beach
+        </pre>
+
+        </div>
     </div>
 
-    <footer class="intro">
+    <footer id="footer" class="intro">
         <p>
             For to us a child is born, to us a son given, and the government will be on his shoulders.<br />
             And he will be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace.<br />
@@ -77,35 +145,40 @@
         </p>
     </footer>
 
+    
     <!--
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-    -->
-    <script>
-        //var submitted = false;
-
-        // do something
-        //function (e) {
-        //    $('#register-form *').fadeOut(2000);
-        //    $('#register-form').prepend('Thank You for Registering. We hope we can fellowship...');
-        //}
-
-
-        
-    </script>
-
-    <script>
-       /* 
+    <script type="text/javascript">
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyNxFnUPjU5ONh33-Mr7V2CaWsXl4KulDnHWN5bni1P3yVL11nAOagaIQrIzZgWxH38/exec';
         const form = document.forms['register-form'];
 
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        function fadeOuteffect() {
+            var fadeTarget = document.getElementById("register-form");
+            var fadeEffect = setInterval(function () {
+                if (!fadeTarget.style.opacity) {
+                    fadeTarget.style.opacity = 1;
+                }
+                if (fadeTarget.style.opacity > 0) {
+                    fadeTarget.style.opacity -= 0.2;
+                } else {
+                    clearInterval(fadeEffect);
+                }
+            }, 200);
+        }
+
+
+        form.addEventListener('submit',
+            e => {
+                e.preventDefault();
+                //form.prepend(document.getElementById("schedule"));
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => console.log('Success!', response))
-                .catch(error => console.error('Error!', error.message))
-        })
-        */
+                .catch(error => console.error('Error!', error.message));
+            })
+
+        form.addEventListener('submit', fadeOuteffect);
+
     </script>
+    -->
 
 </body>
 </html>

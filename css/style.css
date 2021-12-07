@@ -142,3 +142,14 @@ body {
     position: relative;
     left: 1.5%;
 }
+
+.schedule{
+    margin:60px;
+    transition: all 4s ease-in-out;
+}
+
+.schedule.pre{
+    font-family:quicksanddash;
+    font-size: 15px;
+    color:#fff;
+}
